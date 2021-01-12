@@ -35,9 +35,9 @@ const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN ASU!?
             + 'VERSION:3.0\n' // SANA BUAT SENDIRI ENAK BENER LU!!!
-            + 'FN:Mas Lent Creator\n' // NAMA OWNER BOT
-            + 'ORG:Creator MASLENT;\n' // KASIH CREDITS GUA Bang LENT JANCOK!!!
-            + 'TEL;type=CELL;type=VOICE;waid=628165466368:+62 816-5466-368\n' // GANTI NOMOR LU
+            + 'FN:Usman Ramadhan\n' // NAMA OWNER BOT
+            + 'ORG:Creator JDR;\n' // KASIH CREDITS GUA Bang LENT JANCOK!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6285809440506:+62 858-0944-0506\n' // GANTI NOMOR LU
             + 'END:VCARD'
 prefix = '/'
 blocked = []
@@ -149,9 +149,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["628165466368@s.whatsapp.net"] // GANTI NOMOR LU
-			const adminbotnumber = ["628165466368@s.whatsapp.net"] // GANTI NOMOR LU
-			const frendsowner = ["628165466368@s.whatsapp.net"] // GAUSAH DIGANTI!!!
+			const ownerNumber = ["6285809440506@s.whatsapp.net"] // GANTI NOMOR LU
+			const adminbotnumber = ["6285809440506@s.whatsapp.net"] // GANTI NOMOR LU
+			const frendsowner = ["6281567847287@s.whatsapp.net"] // GAUSAH DIGANTI!!!
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -810,7 +810,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6287720646259@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6285809440506@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
                 case 'request':
